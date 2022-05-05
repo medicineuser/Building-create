@@ -1,0 +1,59 @@
+.third{
+    margin-top: 140px;
+
+    // text top title
+
+&__top__title{
+    max-width: 781px;
+    margin: 0 auto;
+}
+
+   &__top__title--text{
+       text-align: center;
+       @include font (32px, 400, $color_1);
+       line-height: 48px;
+   }
+
+//    bottom text
+&__bottom{
+    display: flex;
+    margin-top: 160px;
+}
+
+
+// title box and text
+&__bottom__title{
+    max-width: 489px;
+}
+
+&__bottom__title--text{
+    text-align: left;
+       @include font (32px, 400, $color_1);
+       line-height: 48px;
+}
+
+// suptitle box and text
+&__bottom__suptitle{
+    max-width: 542px;
+    margin-top: 16px; 
+}
+&__bottom__suptitle--text{
+    @include font (20px, 400, $color_2);
+    line-height: 32px;
+}
+
+//  lasttitle box and text
+&__bottom__lasttitle{
+    max-width: 250px;
+    margin-top: 28px;
+    background-image: linear-gradient(to bottom, #fff 50%, orange 50%);
+}
+&__bottom__lasttitle--text{
+    @include font(20px ,400 ,$color_1);  
+}
+
+// img
+.third__bottom__right--icon{
+    max-width: 100%;
+}
+}

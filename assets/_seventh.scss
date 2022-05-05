@@ -1,0 +1,194 @@
+.seventh{
+    margin-top: 125px;
+
+    // top blocks
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__top__suptitle{
+        margin-top: 17px;
+        max-width: 857px;
+    }
+
+// top text style
+&__top__title--text{
+    text-align: center;
+    @include font (32px, 400 , $color_1);
+}
+
+
+&__top__suptitle--text{
+    text-align: center;
+    @include font (20px, 400 , $color_2);
+    line-height: 32px;
+}
+
+// img
+&__top__title{
+    position: relative;
+}
+&__top__title--icon{
+    position: absolute;
+    right: -35px;
+    top: -22px;
+}
+
+}
+
+
+.seventh{
+
+    &__center{
+        display: flex;
+        margin-top: 48px;
+    }
+
+    &__box__one{
+        margin-right: 33px;
+    }
+
+
+    // img
+    &__box__one__img{
+        display: flex;
+        justify-content: center;
+    }
+
+    // text block
+
+    &__box__one__title{
+        margin-top: 20px;
+        margin-bottom: 11px;
+    }
+
+    &__box__one__suptitle{
+        max-width: 325px;
+        padding: 0 5px 0 5px;
+    }
+
+
+    // text style
+    &__box__one__title--text{
+        text-align: center;
+        @include font(18px, 400 ,$color_1);
+        line-height: 24px;
+    }
+    &__box__one__suptitle--text{
+     text-align: center;
+     @include font (16px, 400 , $color_2);
+     line-height: 24px;
+    }
+}
+
+
+// media screen for center
+@media screen and (max-width:882px) {
+    .seventh__center {
+        display:flex;
+        flex-direction:column;
+    }
+
+    .seventh__box__one{
+        margin-top: 45px;
+        margin-right: 0px;
+    }
+    
+    .seventh__box__one__suptitle{
+        max-width: none;
+    }
+    
+}
+
+
+
+
+
+
+// bottom
+.seventh{
+
+&__bottom{
+    display: flex;
+    justify-content:center;
+    background: #F6F8F9;
+    margin-top: 62px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+}
+
+
+// bottom boxes
+&__bottom__title{
+    padding-top: 11px;
+    margin-right: 66px;
+}
+// img
+&__bottom__img{
+    margin-right: 25px;
+}
+
+// bottom text style
+&__bottom__title--text{
+    @include font (18px, 400, $color_1);
+}
+&__bottom__title--textin{
+    @include font (18px , 500 , #000)
+}
+&__bottom__btn--push{
+    @include font (18px , 400 ,$color_1);
+    width: 149px;
+    height: 50px;
+    background: #fff;
+    border: 1px solid #DADEDF;
+    border-radius: 4px;
+}
+}
+
+
+// media bottom 
+
+@media screen and(max-width:994px) {
+    .seventh__bottom__img{
+        margin-left: 15px;
+    }
+    .seventh__bottom__btn{
+        margin-right: 15px;
+    }
+}
+
+
+
+@media screen and(max-width:441px) {
+    .seventh__bottom{
+        display: flex;
+        flex-wrap:wrap ;
+    }
+
+    .seventh__bottom__title{
+        margin-right: 0px;
+    }
+
+
+   .seventh__bottom__title--text{
+       padding-left: 5px;
+       padding-right: 5px;
+       text-align: center;
+   }
+
+   .seventh__bottom__btn{
+       margin-top: 10px;
+   }
+
+    
+}
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+
+// left side
+
+.eight{
+    margin-top: 143px;
+
+
+    &__content{
+        display: flex;
+    }
+
+     
+    &__left__suptitle{
+        max-width: 462px;
+        margin-top: 21px;
+    }
+
+    &__left__img{
+        margin-top: 60px;
+    }
+
+    // text style
+
+    &__left__title--text{
+        @include font (32px, 400 ,$color_1);
+
+    }
+
+    &__left__suptitle--text{
+        @include font (20px, 400 ,$color_2);
+        line-height: 32px;
+    }
+
+
+}
+
+// right
+.eight{
+
+    &__right{
+        margin-left: 90px;
+    }
+
+    &__right__list--box{
+        padding-left: 59px;
+    }
+
+    // img position
+
+    &__right__list--box1{
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    &__right__list--icon{
+        position: absolute;
+        top: 0;
+        left: -64px;
+    }
+
+
+    // text position
+    &__right__list--text{
+        margin-top: 10px;
+    }
+
+    // text style
+
+    &__right__list--item{
+        @include font (18px, 400 ,$color_1);
+    }
+
+    &__right__list--text{
+        max-width: 448px;
+        @include font (16px, 400 ,$color_2);
+        line-height: 24px;
+    }
+
+
+
+    // right btns
+
+    &__right__btns{
+        margin-top: 30px;
+       
+    }
+
+    &__right__btn1{
+        background: $color_1;
+        border-radius: 4px;
+       width: 160px;
+       height: 50px;
+       @include font(17px ,400 ,#fff);
+    }
+
+    &__right__btn2{
+        width: 149px;
+     height: 50px;
+     border: 1px solid $color_3;
+     background: #fff;
+     border-radius: 4px;
+     @include font (18px,400,$color_1);
+     margin-left: 10px;
+    }
+
+
+}
+
+// media for both
+
+@media screen and (max-width:1110px){
+.eight__content{
+    margin-right:15px;
+    margin-left: 15px;
+}
+}
+
+@media screen and (max-width:780px){
+    .eight{
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

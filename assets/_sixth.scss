@@ -1,0 +1,142 @@
+.sixth{
+    margin-top: 143px;
+    
+
+
+
+    // top text style
+
+    &__title--text{
+        @include font (32px , 400 ,$color_1);
+        text-align: center;  
+    }
+    &__suptitle--text{
+        @include font (20px, 400 ,$color_2);
+        line-height: 32px;
+        text-align: center;
+    }
+
+
+    // top boxes
+    &__top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    &__suptitle{   
+        margin-top: 21px;
+        max-width: 643px;
+        
+    }
+}
+
+
+.sixth{
+    // bottom boxes
+    &__bottom__title{
+        position: relative;
+        margin-bottom: 11px;
+    }
+
+    &__bottom__suptitle{
+        max-width: 270px;
+    }
+
+    // img
+
+    &__bottom--icon{
+        position: absolute;
+        top: -5px;
+        left: -53px;
+
+    }
+    
+    
+
+    // bottom text style
+    &__bottom__title--text{
+        @include font(18px, 400 ,$color_1);
+        
+        
+    }
+
+    &__bottom__suptitle--text{
+        @include font (16px,400, $color_2);
+        line-height: 24px;
+        text-align: left;
+        
+    }
+}
+
+
+
+.sixth__first__section , .sixth__second__section , .sixth__third__section{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-left: 30px;
+    margin-top: 43px;
+    
+}
+
+
+
+
+.sixth__last__box{
+    margin-top: 22px;
+    display: flex;
+    justify-content: center;
+}
+
+.last__box--text{
+    text-align: center;
+    @include font (20px , 400 , $color_2);
+   
+}
+.last__box--suptext{
+    @include font(20px, 400 ,$color_1);
+    background: linear-gradient(to bottom,#fff 50%,orange 15%);
+}
+
+
+
+
+
+
+
+
+// media
+@media screen and (max-width:840px) {
+    .sixth{
+        &__first__section , &__second__section,&__third__section{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__bottom__title{
+            margin-top: 25px;
+        }
+
+        &__bottom__title{
+            text-align: center;
+        }
+
+        &__bottom__suptitle--text{
+            text-align: center;
+        }
+
+
+        &__bottom--icon{
+           position: static;          
+        }
+    }
+}
+
+@media screen and (max-width:794px){
+    .sixth__last__box{
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 600px;        
+    } 
+}

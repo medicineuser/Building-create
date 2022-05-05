@@ -1,0 +1,157 @@
+.header{
+    &__content{
+    @include flex(space-between);
+    margin-right:39px;
+    margin-left:31px;
+    }
+
+
+    &__left{
+    display: flex;
+    margin-top: 26px; 
+    margin-bottom: 26px;
+    }
+
+
+    &__right{
+        margin-top: 31px;
+    margin-bottom: 31px;
+    }
+
+    &__list{
+    display: flex;
+    }
+
+    &__item{
+        margin: 7.5px 22px 7.5px 0px;
+    }
+    &__link{
+        @include font(16,400,#72787D)
+    }
+    &__span{
+        @include font(16px ,400 ,#036FC7)
+    }
+    &__logo{
+        margin: 9px 0 8px 8px;  
+    }
+
+    //    header btn
+   &__btn{
+       background: #212B31;
+       border-radius: 4px;
+      width: 143px;
+      height: 34px;
+      @include font(15px ,400 ,#fff)
+   }
+
+  
+    
+}
+
+
+
+
+
+
+// burger menu style
+.burger{
+    margin-top: 19px;
+    position: relative;
+    cursor: pointer;
+    &__list{
+        display: none;
+        position: absolute;
+        top: 43px;
+        right: -27px;
+    }
+    &__menu{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__line{
+        width: 35px;
+        height: 4px;
+        background: #000;
+        margin: 0 auto;
+    }
+    &__close{
+        display: none;
+        @include font(40px , 600 , #000);
+        line-height: 0.5;
+    }
+
+    &__menu.active  &__close {
+        display: flex;
+    }
+    &__menu.active &__line{
+        display: none;
+    }
+    &__menu.active ~ &__list{
+        display: block;
+    }
+    .header__item{
+        text-align: center;
+        margin-top: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// media screen
+
+@media screen  and (max-width:1134px){
+.header{
+    &__content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__right{
+        margin-right: 0px;
+    }
+}
+}
+
+
+@media screen  and (max-width:897px){
+.header{
+    &__list{
+        display: none;
+    }
+}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,42 @@
+.fourth{
+margin-top: 71px;
+
+&__content{
+    border-top: 1px solid $color_4;
+    border-bottom: 1px solid $color_4;
+}
+
+    // top
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 56px;
+    }
+
+    // img
+    .fourth__img--icon{
+        max-width: 100%;
+    }
+
+
+
+    // bottom
+    &__bottom{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 56px;
+    }
+
+}
+
+
+
+@media  screen and(max-width:883px) {
+    .fourth{
+        &__top{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

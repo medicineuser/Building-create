@@ -1,0 +1,242 @@
+.nine{
+    margin-top: 96px;
+
+
+  
+    
+
+//   top only
+
+&__top__title{
+    @include font(32px ,400, $color_1);
+    text-align: center;
+}
+&__top__suptitle{
+    @include font (20px,400 ,$color_1);
+    text-align: center;
+    margin-top: 17px;
+}
+}
+
+
+// center left
+.nine{
+
+    &__center{
+        margin-top: 50px;
+        display: flex;
+    }
+
+    &__first__section{
+        padding-left: 53px;
+    }
+    &__first__box{
+        margin-top: 30px;
+    }
+
+
+    // img position
+   &__bottom__title{
+       position: relative;
+   }
+
+    &__bottom--icon{
+        position: absolute;
+        top: 0;
+        left: -58px;
+    }
+
+    // suptitle boxe
+    &__bottom__suptitle{
+        margin-top: 10px;
+    }
+
+
+
+    // text style
+
+    &__bottom__title--text{
+        @include font(18px, 400 ,$color_1);         
+    }
+
+    &__bottom__suptitle--text{
+        @include font (16px,400, $color_2);
+        line-height: 24px;
+        text-align: left;     
+    }
+
+
+}
+
+// center right
+.nine{
+    &__right{
+
+    background: #F6F8F9;
+    margin-left: 78px;
+  }
+
+  
+    &__right--icon{
+        position: absolute;
+        top: -13px;
+        left: -31px;
+        z-index: 0;
+    }
+
+    // title boxes
+    &__right__suptitle{
+       
+        margin-top: 60px;
+        margin-left: 87px;
+        margin-right: 90px;
+        max-width: 435px;
+    }
+
+    &__right__name{
+        margin-top: 32px;
+    }
+
+
+    // text style
+    &__right__suptitle--text{
+        position: relative;
+        z-index: 2;
+        @include font (30px ,400 , $color_1);  
+        line-height: 48px;   
+        
+    }
+
+
+    // name
+
+    &__right__name{
+        position: relative;
+        margin-left: 144px;
+    }
+
+    &__right__name--icon{
+        position: absolute;
+        top: -7px;
+        left: -59px;
+    }
+
+    &__right__name--text1 ,&__right__name--text2 {
+        display: block;
+    }
+
+    &__right__name--text1{
+        @include font (16px, 400 , $color_1);
+    }
+    &__right__name--text2{
+        @include font (16px, 400 ,$color_2);
+    }
+}
+
+
+
+// media for center 
+@media screen and (max-width:1272px){
+    .nine{
+        &__center{
+            display: flex;
+           flex-wrap: wrap-reverse;
+           justify-content: center;
+        }
+        &__right{
+            margin-left: 0px;
+        }
+        &__right__suptitle--text{
+            text-align: center;
+        }
+        &__right__name{
+            margin-bottom: 55px;
+        }
+    }
+}
+
+
+// bottom
+.nine{
+    &__bottom{
+        margin-top: 139px;
+    }
+
+    &__bottom__up{
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+
+    &__bottom__up--text1,&__bottom__up--text3{
+        max-width: 134px;
+        margin-top: 32px;
+        text-align: center;
+        @include font (16px,400,$color_2);
+      line-height: 19px;
+    }
+
+
+    &__bottom__up--text2{
+        max-width: 134px;
+        margin-top: 57px;
+        text-align: center;
+        @include font (16px,400,$color_2);
+      line-height: 19px;
+      padding-left: 16px;
+    }
+
+
+    &__bottom__up--box{
+        margin-right: 119px;
+    }
+
+    &__bottom__bot{
+        margin-top: 41px;
+        padding-right: 117px;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__bottom__up--text4{
+        max-width: 134px;
+        margin-top: 32px;
+        text-align: center;
+        @include font (16px,400,$color_2);
+      line-height: 19px;
+        padding-left: 25px;
+    }
+
+
+    // img
+    &__bottom__up--icon{
+        max-width: 100%;
+    }
+}
+// media screen for bottom
+@media screen and (max-width:760px){
+    .nine{
+        &__bottom__up{
+            display: flex;
+            flex-direction: column;
+           align-items: center;
+        }
+        &__bottom__up--box{
+            margin-top: 77px;
+            margin-right: 0px;       
+        }
+        &__bottom__bot{
+            margin-top: 60px;
+            padding-right: 16px;
+        }
+
+        &__bottom__up--text1, &__bottom__up--text3,&__bottom__up--text4{
+            margin-top: 25px ;
+        }
+        &__bottom__up--text2{
+            margin-top: 25px;
+        }
+
+    }
+}

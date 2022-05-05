@@ -1,0 +1,112 @@
+.footer{
+    margin-top: 150px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // text style 
+    &__first__title--text{
+        @include font (16px,400 ,$color_1); 
+        padding-left: 35px;    
+    }
+    &__adr--text, &__info--text{
+        @include font (16px, 400 ,$color_2);
+    }
+    &__adr{
+        margin-top: 29px;
+    }
+    &__info{
+        margin-top: 10px;
+    }
+
+    // img
+    &__first--box{
+        position: relative;
+
+    }
+    &__svg{
+        position: absolute;
+        top: -14px; 
+        left: 0;
+    }
+
+   &__info{
+       position: relative;
+   }
+   &__facebook--svg{
+       position: absolute;
+       top: 57px;
+   }
+}
+
+// second titles
+.footer{
+    &__second__title--text{
+        @include font (16px,400 ,$color_1);
+
+    }
+
+    &__second__suptitle--text{
+        @include font (16px, 400 ,$color_2);
+    }
+    &__second__suptitle{
+        margin-top: 22px;
+    }
+}
+
+
+@media screen and (max-width:1112px){
+    .footer{
+        &__content{
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    }
+}
+
+@media screen and (max-width:1112px){
+    .footer{
+       &__top{
+           display: flex;
+          
+       }
+
+       &__second--box{
+           margin-top: 60px;
+       }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// bottom
+.footer{
+    &__bottom{
+        border-top: 1px solid #DADEDF;
+        margin-top: 150px;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &__bottom--text{
+        @include font (16px,400 ,$color_2);
+
+    }
+}

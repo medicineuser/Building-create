@@ -1,0 +1,197 @@
+
+
+// top
+
+.black{
+    margin-top: 144px;
+    background: $color_1;
+    
+
+    // main top box
+    &__top{
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 143px;
+       
+    }
+
+    &__top__left{
+        margin-right: 95px;
+    }
+
+    &__top__list--box{
+        margin-top: 50px;
+        margin-left: 38px;
+    }
+    
+
+
+    // text style 
+
+    &__top__title--text{
+        @include font (32px,400, #ffffff);     
+    }
+
+    &__top__list{
+        list-style: disc;
+    }
+
+    &__top__list--item{
+        @include font (18px, 400 , #fff);
+        max-width: 543px;
+        margin-top: 25px;
+    }
+
+    &__top__list--text1 , &__top__list--text2,&__top__list--text3{
+        @include font (16px, 400, rgba(255, 255, 255, 0.75));
+        margin-top: 10px;
+    }
+
+    // <p> text box size
+
+    &__top__list--text1{
+        max-width: 429px;
+    }
+    &__top__list--text2{
+        max-width: 532px;
+    }
+    &__top__list--text3{
+        max-width: 549px;
+    }
+
+
+    // img
+
+    &__top__right--icon{
+        max-width: 100%;
+    }
+
+    // top btn
+    &__top__btns{
+        margin-top: 50px;
+    }
+    &__top--btn1{
+        background: #fff;
+        border-radius: 4px;
+       width: 166px;
+       height: 50px;
+       @include font(17px ,400 ,$color_1);
+       border: none;
+    }
+
+    &__top--btn2{
+        background: $color_1;
+        border-radius: 4px;
+        width: 149px;
+        height: 50px;
+        border: 1px solid #DADEDF;
+        @include font(17px ,400 ,#fff);
+        margin-left: 10px;
+    }
+  
+}
+
+
+// media screen for top
+@media screen and(max-width:764px) {
+    .black{
+        &__top{
+            display: flex;
+            flex-wrap:wrap-reverse;
+        }
+
+        &__top__title{
+            margin-top: 25px;
+        }
+
+        &__top__left{
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+
+    }
+    
+}
+
+
+
+
+// bottom
+
+.black{
+    &__bottom{
+        margin-top: 127px;
+        padding-bottom: 118px;
+        display: flex;
+    }
+
+    &__box__one{
+        margin-right: 18px;
+    }
+
+
+    // img
+    &__box__one__img{
+        display: flex;
+        justify-content: center;
+    }
+
+
+    // text block
+
+    &__box__one__title{
+        margin-top: 20px;
+        margin-bottom: 11px;
+    }
+
+    &__box__one__suptitle{
+        max-width: 340px;
+        
+    }
+
+
+    // text style
+    &__box__one__title--text{
+        text-align: center;
+        @include font(18px, 400 ,#fff);
+        line-height: 24px;
+    }
+    &__box__one__suptitle--text{
+     text-align: center;
+     @include font (16px, 400 , rgba(255, 255, 255, 0.75));
+     line-height: 24px;
+    }
+
+}
+
+// media for bottom
+
+@media screen  and( max-width:1204px) {
+    .black{
+        &__bottom{
+            margin-right: 15px;
+            margin-left: 15px;
+        }
+    }  
+}
+
+@media screen  and( max-width:764px){
+    .black{
+
+
+        &__bottom{
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__box__one__suptitle{
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        &__box__one{
+            margin-top: 25px;
+        }
+    }
+}
